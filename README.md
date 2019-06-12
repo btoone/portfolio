@@ -53,9 +53,9 @@ This project is licensed under the terms specified in the [`LICENSE`] file.
 Meta
 ----
 
-This README was crafted with love and by following README best practices from
-https://github.com/jehna/readme-best-practices
+This README was crafted with love, and by following the [`README best practices`].
 
 [`LICENSE`]: /LICENSE
 [`TODO`]: /TODO.md
+[`README best practices`]: https://github.com/jehna/readme-best-practices
 
