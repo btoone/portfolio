@@ -1,6 +1,19 @@
 require 'minitest/autorun'
 require_relative 'word_count.rb'
 
+# Run test continuously with entr or watch (entr allows for use of color 
+# output and is easier to watch multiple files).
+#
+#     ls *.rb | entr -c ruby word_count_test.rb --pride
+#     find . -name '*.rb' | entr -c ruby word_count_test.rb --pride
+#
+# Use the special character /_ to refer to the first file that changed.
+# 
+#     find . -name '*.rb' | entr -c ruby /_ --pride
+#
+# For better reporting output, especially with the spec formate,  use 
+# minitest-reports gem.
+#
 class WordCountTest < Minitest::Test
   def setup
     @words = %w{ 
