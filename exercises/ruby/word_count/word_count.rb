@@ -3,9 +3,7 @@ class WordCount
     # Specify a default value of 0 (integer) to avoid nil error when doing += 1
     result = Hash.new(0)
 
-    words.each do |word|
-      result[word] += 1
-    end
+    words.map { |w| result[w] += 1 }
 
     return result
   end
