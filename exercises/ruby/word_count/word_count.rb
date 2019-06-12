@@ -1,13 +1,10 @@
 class WordCount
   def self.count(words = [])
-    result = Hash.new()
+    # Specify a default value of 0 (integer) to avoid nil error when doing += 1
+    result = Hash.new(0)
 
     words.each do |word|
-      if result[word].nil?
-        result[word] = 1
-      else
-        result[word] += 1
-      end
+      result[word] += 1
     end
 
     return result
